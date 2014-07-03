@@ -8,5 +8,5 @@ foo.txt
 # Ignore objects and archives.
 *.[oa]
 # Ignore log direction and .DS_Store files
-/log
+#/log
 .DS_Store	
