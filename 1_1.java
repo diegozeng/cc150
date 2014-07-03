@@ -6,6 +6,7 @@
  * 特殊情况: null和空字符串都认为是unique的输入，即返回true. 若字符串长度大于256，则返回false.
  * 时间复杂度: O(n)
  * 空间复杂度：O(1)
+ * 拓展：1）String的character之间两两比较；2）sort之后。。。
  */
 import java.io.*;
 
