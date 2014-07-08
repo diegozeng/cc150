@@ -2,7 +2,7 @@
  * 1.2 Implement a function void reverse(char* str) in C or C++ which reverses a null-terminated string.
  *
  * 思路：申明两个指针，分别指向字符串首尾地址，每一次循环后：首指针和尾指针分别后移和前移一位；一个reverse函数，替换两指针对应的数值.
- * 特殊情况: 考虑了空字符串和null指针.
+ * 特殊情况: 考虑了空指针.
  */
 
 # include <stdio.h>
@@ -27,10 +27,11 @@ void Reverse(char* Array)
 		printf("Error!\n");
 		exit(-1);
 	}
-	if (!Array)
-	{
-		return;	
-	}
+
+//	if (!Array)
+//	{
+//		return;	
+//	}
 
 	char* first = Array;
 	char* last = first + strlen(Array)-1;
