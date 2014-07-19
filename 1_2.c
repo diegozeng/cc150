@@ -15,14 +15,14 @@ void Reverse(char* Array);
 int main(void)
 {
 	char InputArray[] = "diegozeng";
-	Reverse(InputArray);
+	Reverse(InputArray); // 存放的是字符数组第一位元素的地址
 	printf("After reverse: %s\n", InputArray);
 	return 0;	
 }
 
-void Reverse(char* Array)
+void Reverse(char* pArray)
 {
-	if (Array == NULL)
+	if (pArray == NULL)
 	{
 		printf("Error!\n");
 		exit(-1);
@@ -33,8 +33,8 @@ void Reverse(char* Array)
 //		return;	
 //	}
 
-	char* first = Array;
-	char* last = first + strlen(Array)-1;
+	char* first = pArray;
+	char* last = first + strlen(pArray)-1; //复习strlen的用法
 	char mid;
 	while (first < last)
 	{
