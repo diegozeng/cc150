@@ -1,5 +1,7 @@
-/**
- * Created by Readman on 6/16/14.
+/* 
+ * 1.4 Write a method to replace all spaces in string with "%20". You may assume that the string has sufficient space at the end of the string to hold the additional characters, and that you are given the "ture" length of string. (Note: if implementing in Java, please use a character array so that you can perform this operation in place.)
+ *
+ * 思路:先遍历字符串，数出空格的个数，新字符串的长度＝原字符串的长度＋2*空格的个数，迭代赋值运算：1.遇到字符，copy老字符串的字符到新字符串. 2遇到空格，多插入两个空格，分别放入“％”，“2”，“0”.｀：
  */
 class replaceSpace {
     /*
@@ -12,8 +14,8 @@ class replaceSpace {
     }
     public static String replaceSpace (char[] ary) {
         int count = 0;
-        for (char c : ary) {
-            if (c == ' ')
+        for (char blank : ary) {
+            if (blank == ' ')
                 count ++;
         }
         return rec(ary,new char[count*2 + ary.length], 0, 0);
