@@ -10,6 +10,7 @@ class replaceSpace {
      * */
     public static void main(String[] args) {
         String s = "Mr John Smith  ";
+	s = s.trim();
         System.out.println(replaceSpace(s.toCharArray()));
     }
     public static String replaceSpace (char[] ary) {
