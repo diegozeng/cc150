@@ -59,6 +59,6 @@ class Test21 {
         l4.next = l5;
         l5.next = null;
 		deleteDups(l1);
-        System.out.println("(The linked after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
+        System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
 	}
 }
