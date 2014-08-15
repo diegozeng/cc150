@@ -47,13 +47,13 @@ class Test23 {
         l4.next = l5;
         l5.next = null;
         deleteNode(l1,l1);
-        System.out.println("(The linked after deleteDups() should be: 2 -> 2 -> 3 -> 4)");
+        System.out.println("(The linked list after deleteDups() should be: 2 -> 2 -> 3 -> 4)");
 //      deleteNode(l2,l1);
-//      System.out.println("(The linked after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
+//      System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
 //      deleteNode(l3,l1);
-//      System.out.println("(The linked after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
+//      System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
 //      deleteNode(l4,l1);
-///     System.out.println("(The linked after deleteDups() should be: 1 -> 2 -> 2 -> 4)");
+///     System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 2 -> 4)");
 //      deleteNode(l5,l1); NUllpointerException, cannot delete last node in the single linked list.
     }
 }
