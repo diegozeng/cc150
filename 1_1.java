@@ -44,3 +44,18 @@ class UniqueCharacters {
 		}
 	}
 }
+
+//Solution 2: 利用bitvector的思想检查重复(前提是输入a－z)，更大的数据查重可用bitmap实现
+public boolean isUniqueChars2(String str) {
+    int checker = 0;
+    for (int i = 0; i < str.length(); i++) {
+        int val = str.charAt(i) - 'a';
+        if ((checker & (1 << val)) > 0) {
+            return false;
+        }
+        else {
+            checker |= (1 << val);
+        }
+    }
+    return true;
+}
