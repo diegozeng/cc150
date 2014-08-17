@@ -24,6 +24,7 @@ class Test21 {
         }
         else {
             LinkedListNode current = head;
+         //   System.out.println(current.next);
             while(current != null) {
                 LinkedListNode runner = current;
                 while(runner.next != null) {
