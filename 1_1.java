@@ -45,8 +45,8 @@ class UniqueCharacters {
 	}
 }
 
-//Solution 2: 利用bitvector的思想检查重复(前提是输入a－z)，更大的数据查重可用bitmap实现
-public boolean isUniqueChars2(String str) {
+//Solution 2: 利用bitvector的思想检查重复(前提是输入a－z)，更大的数据查重可用bitmap实现,空间是Sol1的1/8
+/*public boolean isUniqueChars2(String str) {
     int checker = 0;
     for (int i = 0; i < str.length(); i++) {
         int val = str.charAt(i) - 'a';
@@ -58,4 +58,4 @@ public boolean isUniqueChars2(String str) {
         }
     }
     return true;
-}
+}*/
