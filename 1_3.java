@@ -1,7 +1,10 @@
 /*
  * 1.3 Given two Stirngs, write a method to decide if one is a permutation of the other.
  *
- * 思路：
+ * 思路：类似1.1的思路，建一个int数组，根据index记录字符出现次数。
+ *
+ * 时间复杂度: O(n)[若采用排序逐次比较，则为nlogn]
+ * 空间复杂度: O(1)[确定了自符类型，比如unicode, 256为常量]
  */ 
 
 import java.io.*;
