@@ -19,9 +19,9 @@ class LinkedListNode {
 
 
 class Test21 {
-    /*
+    
     //Follow up
-	public static void deleteDups(LinkedListNode head) {
+	public static void deleteDups1(LinkedListNode head) {
 		if (head == null) {
             return;
         }
@@ -46,11 +46,11 @@ class Test21 {
             }
         }
     }
-    */
+    
     
     
     // With temporary buffer (HashSet)
-    public static void deleteDups(LinkedListNode head) {
+    public static void deleteDups2(LinkedListNode head) {
         if (head == null)
             return;
         HashSet<Integer> hashset = new HashSet<Integer>();
@@ -84,7 +84,9 @@ class Test21 {
         l3.next = l4;
         l4.next = l5;
         l5.next = null;
-		deleteDups(l1);
+		deleteDups1(l1);
+        System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
+        deleteDups2(l1);
         System.out.println("(The linked list after deleteDups() should be: 1 -> 2 -> 3 -> 4)");
 	}
 }
