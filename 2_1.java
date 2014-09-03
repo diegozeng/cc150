@@ -19,7 +19,7 @@ class LinkedListNode {
 
 
 class Test21 {
-    
+    /*
     //Follow up
 	public static void deleteDups(LinkedListNode head) {
 		if (head == null) {
@@ -46,9 +46,9 @@ class Test21 {
             }
         }
     }
+    */
     
     
-    /*
     // With temporary buffer (HashSet)
     public static void deleteDups(LinkedListNode head) {
         if (head == null)
@@ -57,20 +57,16 @@ class Test21 {
         LinkedListNode current = head;
         hashset.add(head.data);
         while(current != null) {
-            if(hashset.contains(current.data)) {
-                current = current.next;
-            }
-            else {
+            if(!hashset.contains(current.data)) 
                 hashset.add(current.data);
-                current = current.next;
-            }
+            current = current.next;
         }
         Iterator<Integer> iterator = hashset.iterator();
         while(iterator.hasNext()){
             System.out.print(iterator.next()+" ");
         }
     }
-    */
+    
 
 	public static void main(String[] args) {
 		LinkedListNode l1 = new LinkedListNode();
