@@ -4,14 +4,13 @@
  * 思路:clone链表, reverse原链表, 比较两链表的前半部分是否相同.
  *
  * 时间复杂度:O(n)
- * 空间复杂度:O(2n)（也算是O(n)吧）
+ * 空间复杂度:O(2n)（也算是O(n)吧
  *
  * Test case: 1.长度为奇数的链表
  *            2.长度为偶数的链表
  *            3.空链表
  *
- * 注: 如果可以用built－in，这题简单很多，clone和reverse都可以拿来直接用。之所以写的略复杂也是因为完全从零开始实现clone和reverse, 其中reverse参考的是Leetcode里“Reverse Arraylist II”
-     的java实现，就当顺带刷了一道Leetcode吧。
+ * 注: 如果可以用built－in，这题简单很多，clone和reverse都可以拿来直接用。之所以写的略复杂也是因为完全从零开始实现clone和reverse, 其中reverse参考的是Leetcode里“Reverse Arraylist II”的java实现，就当顺带刷了一道Leetcode吧。
  */
 
 class LinkedListNode {
@@ -81,12 +80,12 @@ class Test27 {
             }
         }
         System.out.println(" ");
-        LinkedListNode l6 = reverseBetween(head,1,length);
+        LinkedListNode node = reverseBetween(head,1,length);
         for(int i = 0; i < half; i++) {
-            if(l6.val == ori[i]) {
+            if(node.val == ori[i]) {
                 count1++;
             }
-            l6 = l6.next;
+            node = node.next;
         }
         if(count1 == half) {
             return true;
@@ -101,7 +100,7 @@ class Test27 {
         LinkedListNode l2 = new LinkedListNode(2);
         LinkedListNode l3 = new LinkedListNode(3);
         LinkedListNode l4 = new LinkedListNode(4);
-        LinkedListNode l5 = new LinkedListNode(4);
+        LinkedListNode l5 = new LinkedListNode(3);
         LinkedListNode l6 = new LinkedListNode(2);
         LinkedListNode l7 = new LinkedListNode(1);
         l1.next = l2;
