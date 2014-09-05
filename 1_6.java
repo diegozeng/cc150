@@ -2,6 +2,9 @@
  * Given an image represented by an N*N matrix, where each pixel in the image is 4 bytes, write a method to rotate the image by 90 degrees. Can you do this in place?
  *
  * 思路: 对应关系: i = length - j -1 
+ *
+ * 时间复杂度: O(n^2)
+ * 空间复杂度: O(1)
  */
 
 class rotate {
