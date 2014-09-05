@@ -2,7 +2,7 @@
  * 2.4 Write code to partition a linked list around a value x, such that all
  * nodes less than x come before all nodes greater than or equal to x.
  *
- * 思路: 小于x的存一个叫链表，标记链表头节点beforeStart；同理，大于x的链表头节点afterStart，最后找到前者的尾节点和afterStart连在一起。
+ * 思路: 小于x的存一个链表，标记链表头节点beforeStart；同理，大于x的链表头节点afterStart，最后找到前者的尾节点和afterStart连在一起。
  *
  * 时间复杂度:O(n)
  * 空间复杂度:O(n)
