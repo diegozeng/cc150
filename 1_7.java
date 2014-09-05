@@ -2,6 +2,9 @@
  * Write an algorthm such that if an element in an M*N matrix is 0, its entire row and column are set to 0.
  *
  * 思路: 先遍历二维矩阵，把0所在的元素位置设为TRUE(boolean), 再次遍历，元素满足所在行或列有元素为Ture的情况就置0.
+ *
+ * 时间复杂度: O(MN)
+ * 空间复杂度: O(M+N)[可以优化至O(1):使用第0行，第0列作为储存matrix是否有0的地方，不过要先检查第0行，第0列本身是否有0]
  */
 class setzero {
 	public static void main(String[] args) {
