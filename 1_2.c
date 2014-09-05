@@ -10,7 +10,7 @@
 # include <stdlib.h>
 
 // declare functions
-void Reverse(char* Array);
+void Reverse(char* );
 
 int main(void)
 {
