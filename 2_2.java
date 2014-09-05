@@ -2,6 +2,9 @@
  * 2.2 Implement an algorithm to find the kth to last element of a singly linked list.
  *
  * 思路：若linkedlist长度已知，则get位于length－k位置的元素即可；若长度未知，利用书中的“runner tech”，定义两个指针，先拉开距离k，然后同时向链表尾部移动，直到首指针到链表末尾，get尾指针所在位置的元素。
+ *
+ * 时间复杂度: O(n)
+ * 空间复杂度: O(1)
  */
 import java.util.LinkedList;
 import java.util.Iterator;
