@@ -118,3 +118,98 @@ class Test27 {
         }
     }
 }
+
+/*
+class Node {
+	public Node next;
+	public int val;
+	Node(int _v) {
+		val = _v;
+		next = null;
+	}
+}
+
+class PalindromeList {
+	public static boolean isPalindrome(Node head) {
+		if (head == null || head.next == null) return true;
+		Node slow = head;
+		Node fast = head;
+		while (fast != null && fast.next != null) {
+			slow = slow.next;
+			fast = fast.next.next;
+		}
+		boolean result = false;
+		if (fast == null) {
+			// slow is the head of second half
+			Node reversed = reverse(slow);
+			result = areEqual(head, slow, reversed);
+			reverse(reversed);
+		} else {
+			// slow is the middle node
+			Node reversed = reverse(slow.next);
+			result = areEqual(head, slow, reversed);
+			reverse(reversed);
+		}
+		return result;
+	}
+    
+	public static boolean areEqual(Node a, Node end, Node b) {
+		// a starts with a and ends with end
+		// b starts with b and ends with null
+		Node p1 = a;
+		Node p2 = b;
+		while(p1 != end && p2 != null) {
+			if (p1.val != p2.val) return false;
+			p1 = p1.next;
+			p2 = p2.next;
+		}
+		return p1 == end && p2 == null;
+	}
+    
+	public static Node reverse(Node head) {
+		Node fakeHead = new Node(0);
+		Node cur = head;
+		while(cur != null) {
+			// insert cur
+			Node tmp = cur.next;
+			cur.next = fakeHead.next;
+			fakeHead.next = cur;
+			cur = tmp;
+		}
+		return fakeHead.next;
+	}
+    
+	public static void main(String[] args) {
+		Node test1 = arrayToLinkedList(new int[]{1});
+		Node test2 = arrayToLinkedList(new int[]{1,1});
+		Node test3 = arrayToLinkedList(new int[]{1,2});
+		Node test4 = arrayToLinkedList(new int[]{1, 2, 1});
+		Node test5 = arrayToLinkedList(new int[]{1, 2, 2});
+		Node test6 = arrayToLinkedList(new int[]{1, 2, 2, 1});
+		Node test7 = arrayToLinkedList(new int[]{1, 2, 3, 4});
+		Node test8 = arrayToLinkedList(new int[]{1, 3, 4, 3, 1});
+        
+		assert isPalindrome(test1);
+		assert isPalindrome(test2);
+		assert !isPalindrome(test3);
+		assert isPalindrome(test4);
+		assert !isPalindrome(test5);
+		assert isPalindrome(test6);
+		assert !isPalindrome(test7);
+		assert isPalindrome(test8);
+        
+		System.out.println("Tests Passed");
+	}
+    
+	private static Node arrayToLinkedList(int[] arr) {
+		if (arr == null || arr.length < 1) return null;
+		Node fakeHead = new Node(0);
+		Node cur = fakeHead;
+		for(int i = 0; i < arr.length; i++) {
+			cur.next = new Node(arr[i]);
+			cur = cur.next;
+		}
+		return fakeHead.next;
+	}
+    
+}*/
