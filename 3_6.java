@@ -1,5 +1,5 @@
 /**
- * 3.5  Write a program to sort a stack in ascending order (with biggest items on top). You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure (such as an array).The stack supports the following operations: push, pop, peek, and isEmpty.
+ * 3.6  Write a program to sort a stack in ascending order (with biggest items on top). You may use at most one additional stack to hold items, but you may not copy the elements into any other data structure (such as an array).The stack supports the following operations: push, pop, peek, and isEmpty.
  *
  * 思路: 用一个buffer stack储存临时数据，一个变量temp储存s stack的peek， temp和buffer中的每一个数比较，直到temp < buffer[i]，插入至i位置，循环往复。
  *
