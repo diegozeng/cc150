@@ -24,7 +24,7 @@ class treeBalance {
             return 0;
         }
         else {
-            return Math.max(getHeight(root.left),getHeight(root.left)) + 1;
+            return Math.max(getHeight(root.left),getHeight(root.right)) + 1;
         }
     }
 
@@ -44,11 +44,11 @@ class treeBalance {
     public static void main (String args[]) {
         TreeNode t43 = new TreeNode(null, null, 9);
         TreeNode t41 = new TreeNode(null, null, 8);
-        TreeNode t34 = new TreeNode(null, null, 7);
+        //TreeNode t34 = new TreeNode(null, null, 7);
         TreeNode t33 = new TreeNode(null, null, 6);
         TreeNode t32 = new TreeNode(t43, null, 5);
         TreeNode t31 = new TreeNode(t41, null, 4);
-        TreeNode t22 = new TreeNode(t33, t34, 3);
+        TreeNode t22 = new TreeNode(t33, null, 3);
         TreeNode t21 = new TreeNode(t31, t32, 2);
         TreeNode t11 = new TreeNode(t21,t22,1);
         if(isBalanced(t11))
