@@ -9,4 +9,5 @@ foo.txt
 *.[oa]
 # Ignore log direction and .DS_Store files
 #/log
-.DS_Store	
+.DS_Store
+*.class
