@@ -1,7 +1,7 @@
 /**
  * 4.5 Implement a function to check if a binary tree is a binary search tree.
  *
- * 思路: BST符合的条件是对于每个node，左孩子<node<右孩子，而且没有重复的值。设定，min,max为局部的最大/最小值, 随着递归的深入不断更新。对于第一个节点，递归时没有min/max的信息，可用Integer.MIN_VALUE, Integer.MAX_VALUE来替代。 N为节点数，每个循环层数＋1，因而是logN的空间复杂度。
+ * 思路: BST符合的条件是对于每个node，左孩子<node<右孩子，而且没有重复的值。设定，min,max为局部的最大/最小值, 随着递归的深入不断更新。对于第一个节点，递归时没有min/max的信息，可用Integer.MIN_VALUE, Integer.MAX_VALUE来替代。 N为节点数，每个循环层只出一个boolean值，因而是logN的空间复杂度。
  *
  * 时间复杂度:O(N)
  * 空间复杂度:O(logN)

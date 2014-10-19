@@ -28,8 +28,8 @@ class Test42 {
 		Node current = null;
 		while(!queue.isEmpty()) {
 			current = queue.poll();
-//            System.out.println(current);
-//            System.out.println(current.neighbors);
+//          System.out.println(current);
+//          System.out.println(current.neighbors);
 			if (current == n2)
 				return true;
 			for (Node neighbor : current.neighbors) {

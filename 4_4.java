@@ -1,5 +1,5 @@
 /**
- * 4.3  Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
+ * 4.4  Given a directed graph, design an algorithm to find out whether there is a route between two nodes.
  *
  * 思路: 将BFS的思想用在树上，利用Queue逐层遍历，由于树的孩子只有一个parent，所以遍历的时候不用担心重复的问题。最后的结果以LinkedList的形式存在一个ArrayList里，其index表示树的深度.
  *
@@ -13,14 +13,14 @@ import java.util.LinkedList;
 import java.util.ArrayList;
 
 class TreeNode {
-	public int val;
-	public TreeNode left;
-	public TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
     public TreeNode(TreeNode lef, TreeNode rig, int v) {
-		this.val = v;
-		this.left = lef;
-		this.right = rig;
-	}
+        this.val = v;
+        this.left = lef;
+        this.right = rig;
+    }
 }
 
 class Test44 {
