@@ -11,3 +11,5 @@ foo.txt
 #/log
 .DS_Store
 *.class
+*.c
+*.out
